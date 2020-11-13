@@ -6,22 +6,30 @@ namespace lesson4
     {
         static void Main(string[] args)
         {
+            
+            
+        }
+
+
+        //показывает результат
+        public void result()
+        {
             int[] arr = createArray();
 
             int count = 0;
 
-            for(int i = 0; i < arr.Length-1; i++)
-            {                
-                if(isValid(arr[i]) || isValid(arr[i + 1]))
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                if (isValid(arr[i]) || isValid(arr[i + 1]))
                 {
                     count++;
                 }
             }
 
             Console.WriteLine(count);
-            
         }
 
+        //создает массив из 20ти элементов
         public static int[] createArray()
         {
             int[] arr = new int[20];
@@ -37,7 +45,7 @@ namespace lesson4
         }
 
 
-        //создает массив из 20ти элементов
+        //выводит в консоле массив
         public static void print(int[] arr)
         {
             for(int i = 0; i < arr.Length; i++)
