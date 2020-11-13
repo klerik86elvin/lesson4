@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+using System.IO;
 namespace lesson4
 {
     class TestArray
     {
-        int[] arr;
-        int sum;
-        int length;
-        int maxCount;
+        public int[] arr;
+        public int sum;
+        public int length;
+        public int maxCount;
         public TestArray(int lenght, int step)
         {
             this.arr = new int[lenght];
@@ -22,6 +22,13 @@ namespace lesson4
             }
 
             this.CountMax();
+        }
+
+        public TestArray(string filename)
+        {
+            StreamReader sr = new StreamReader(filename);
+            int n = int.Parse(sr.ReadLine());
+            arr = new int[n];
         }
 
         public void Inverse()

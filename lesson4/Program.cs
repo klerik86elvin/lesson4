@@ -6,16 +6,17 @@ namespace lesson4
     {
         static void Main(string[] args)
         {
-            
+            TestArray t = new TestArray("C:\\Users\\User\\Desktop\\lesson4-main\\lesson4\\lesson4\\data.txt");
+
+            int[] arr = createArray();
+            StaticClass.arr("C:\\Users\\User\\Desktop\\lesson4-main\\lesson4\\lesson4\\data.txt");
             
         }
 
 
         //показывает результат
-        public void result()
+        public void result(int[] arr)
         {
-            int[] arr = createArray();
-
             int count = 0;
 
             for (int i = 0; i < arr.Length - 1; i++)
