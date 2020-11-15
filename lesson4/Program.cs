@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace lesson4
 {
@@ -8,8 +9,7 @@ namespace lesson4
         {
             TestArray t = new TestArray("C:\\Users\\User\\Desktop\\lesson4-main\\lesson4\\lesson4\\data.txt");
 
-            int[] arr = createArray();
-            StaticClass.arr("C:\\Users\\User\\Desktop\\lesson4-main\\lesson4\\lesson4\\data.txt");
+
             
         }
 
